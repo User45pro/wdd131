@@ -55,7 +55,7 @@ nav ul {
 nav a {
   display: block;
   padding: 0.85rem 1.4rem;
-  border-bottom: 4px solid transparent;
+  border-bottom: 4px solid var(--navy);
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
@@ -92,7 +92,7 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 1px 4px rgba(22, 50, 79, 0.08);
+  box-shadow: 0 1px 4px #16324f14;
 }
 
 .card h2 {
