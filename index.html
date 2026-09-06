@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. William Michel Borja Ornelas. Desarrollo web, CSS, JavaScript, HTML5, y buenas prácticas de diseño web.">
-    <meta name="author" content="William Michel Borja Ornelas">
-    <title>WDD 131 - Dynamic Web Fundamentals - William Michel Borja Ornelas</title>
-    <link rel="stylesheet" href="styles/base.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 - Dynamic Web Fundamentals - William Michel Borja Ornelas</title>
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals course home page for William Michel Borja Ornelas. Coursework in HTML, CSS, JavaScript, responsive layout, accessibility and web development best practices.">
+  <meta name="author" content="William Michel Borja Ornelas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - William Michel Borja Ornelas</h1>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/william-michel-borja-ornelas-ba85362a0" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng" target="_blank">Scripture</a></li>
-                <li><a href="#" target="_blank">Final Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <img src="./images/FaceApp_1631515996938.jpg" alt="Your image">
-            <p>My name is William Michel Borja Ornelas, and I am learning web development. I enjoy coding and building websites! I am passionate about learning new technologies, and improving my skills in HTML, CSS, and JavaScript.</p>
-        </section>
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
-                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
-                <li><a href="https://www.css-tricks.com" target="_blank">CSS-Tricks</a></li>
-                <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; <span id="currentyear"></span> William Michel Borja Ornelas,Michoacan,México</p>
-        <p id="lastModified"></p>
-    </footer>
-    <script src="scripts/getdates.js" defer></script>
+
+  <header>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/william-michel-borja-ornelas-ba85362a0">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&amp;id=p7#p7">Scripture</a>
+        </li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>William Michel Borja Ornelas</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <img src="images/profile.jpg" alt="Portrait of William Michel Borja Ornelas" width="520" height="520"
+        loading="lazy">
+      <p>
+        I live in Michoacan, Mexico, and I teach English online every day. Most of my week is spent in one-on-one
+        lessons and small evening groups, helping adults get comfortable speaking a language they were afraid of for
+        years.
+      </p>
+      <p>
+        I also work as a student mentor, which is where I learned that a clear message beats a clever one. That is the
+        same idea I want to bring into the pages I build.
+      </p>
+      <p>
+        You can see what I am working on in my
+        <a href="https://github.com/User45pro">GitHub profile</a>, or reach me through
+        <a href="https://www.linkedin.com/in/william-michel-borja-ornelas-ba85362a0">LinkedIn</a>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Why I Am Taking This Course</h2>
+      <img src="images/workspace.svg" alt="Illustration of a browser window with code next to a chat bubble"
+        width="520" height="400" loading="lazy">
+      <p>
+        Teaching taught me how people learn; I want to build the tools they learn with. In
+        <a href="https://byui-cse.github.io/wdd131-ww-course/">WDD 131</a> I am moving past static pages into
+        JavaScript, so a site can respond to what someone actually does on it.
+      </p>
+      <p>
+        My goal this semester is simple: write markup that validates, style it so it reads well on a phone, and keep
+        every page fast enough that a student on a slow connection is not left waiting. When I get stuck I usually end
+        up on <a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> William Michel Borja Ornelas, Michoacan, Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+
 </body>
+
 </html>

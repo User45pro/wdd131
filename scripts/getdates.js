@@ -1,8 +1,7 @@
-// Obtener el año actual y mostrarlo en el span con id 'currentyear'
-const yearSpan = document.getElementById('currentyear');
-const currentYear = new Date().getFullYear();
-yearSpan.textContent = currentYear;
+// WDD 131 - W01
+// Fills in the copyright year and the last modified date in the footer.
 
-// Obtener la fecha de la última modificación del documento y mostrarla
-const lastModifiedParagraph = document.getElementById('lastModified');
-lastModifiedParagraph.textContent = `Last Modified: ${document.lastModified}`;
+const currentYear = new Date().getFullYear();
+document.getElementById("currentyear").textContent = currentYear;
+
+document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
