@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temple Album - WDD 131 - William Michel Borja Ornelas</title>
+  <meta name="description"
+    content="WDD 131 W02 Picture Album by William Michel Borja Ornelas: a responsive photo album of temples with a mobile hamburger menu.">
+  <meta name="author" content="William Michel Borja Ornelas">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <span id="album-title">Temple Album</span>
+    <button id="menu-button" type="button" aria-label="Open the navigation menu" aria-expanded="false"></button>
+    <nav id="site-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples Around the World</h1>
+
+    <div class="album">
+      <figure>
+        <img src="images/temples/aba-nigeria.jpg" alt="Aba Nigeria Temple, white spire above tropical trees" width="400" height="250" loading="lazy">
+        <figcaption>Aba Nigeria Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/manti-utah.jpg" alt="Manti Utah Temple, cream limestone towers on a hill" width="400" height="250" loading="lazy">
+        <figcaption>Manti Utah Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/payson-utah.jpg" alt="Payson Utah Temple lit at dusk" width="400" height="225" loading="lazy">
+        <figcaption>Payson Utah Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/yigo-guam.jpg" alt="Yigo Guam Temple with palm trees in front" width="400" height="250" loading="lazy">
+        <figcaption>Yigo Guam Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/washington-dc.jpg" alt="Washington D.C. Temple, white marble with golden spires" width="400" height="250" loading="lazy">
+        <figcaption>Washington D.C. Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/lima-peru.jpg" alt="Lima Peru Temple glowing in the evening" width="400" height="250" loading="lazy">
+        <figcaption>Lima Peru Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/mexico-city-mexico.jpg" alt="Mexico City Mexico Temple with Mayan-inspired architecture" width="400" height="250" loading="lazy">
+        <figcaption>Mexico City Mexico Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/san-diego-california.jpg" alt="San Diego California Temple, twin white spires" width="400" height="250" loading="lazy">
+        <figcaption>San Diego California Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/laie-hawaii.jpg" alt="Laie Hawaii Temple with reflecting pool and gardens" width="400" height="250" loading="lazy">
+        <figcaption>Laie Hawaii Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> William Michel Borja Ornelas, Michoacan, Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+
+</html>
