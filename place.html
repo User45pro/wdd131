@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mexico - WDD 131 - William Michel Borja Ornelas</title>
+  <meta name="description"
+    content="WDD 131 W03 Country Page by William Michel Borja Ornelas: facts and weather for Mexico with a wind chill calculation.">
+  <meta name="author" content="William Michel Borja Ornelas">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mexico</h1>
+  </header>
+
+  <picture class="hero">
+    <source srcset="images/mexico-hero-large.webp" media="(min-width: 640px)">
+    <img src="images/mexico-hero-small.webp" alt="Papel picado banners strung over a colonial church in Mexico"
+      width="600" height="400">
+  </picture>
+
+  <main>
+    <section class="data">
+      <h2>Data</h2>
+      <dl>
+        <div><dt>Area:</dt><dd>1,964,375 km&sup2;</dd></div>
+        <div><dt>Population:</dt><dd>129,740,000</dd></div>
+        <div><dt>Capital:</dt><dd>Mexico City</dd></div>
+        <div><dt>Languages:</dt><dd>Spanish, 68 national Indigenous languages</dd></div>
+        <div><dt>Currency:</dt><dd>Mexican peso (MXN)</dd></div>
+        <div><dt>Time Zone:</dt><dd>UTC-8 to UTC-5</dd></div>
+        <div><dt>Calling Code:</dt><dd>+52</dd></div>
+        <div><dt>Internet TLD:</dt><dd>.mx</dd></div>
+      </dl>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <img class="weather-icon" src="images/weather-sun.svg" alt="Partly sunny weather icon" width="64" height="64">
+      <dl>
+        <div><dt>Temperature:</dt><dd><span id="temperature">5</span> &deg;C</dd></div>
+        <div><dt>Conditions:</dt><dd>Clear evening</dd></div>
+        <div><dt>Wind:</dt><dd><span id="windspeed">10</span> km/h</dd></div>
+        <div><dt>Wind Chill:</dt><dd><span id="windchill"></span></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> William Michel Borja Ornelas, Michoacan, Mexico</p>
+    <p id="lastModified"></p>
+    <p class="attribution">Hero photo from Unsplash</p>
+  </footer>
+
+</body>
+
+</html>
