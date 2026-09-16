@@ -34,7 +34,7 @@ header {
 h1 {
   margin: 0;
   color: #ffffff;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Roboto Slab", Georgia, serif;
   font-size: 2rem;
   letter-spacing: 0.03em;
 }
@@ -68,7 +68,7 @@ h2 {
   margin: 0 0 0.75rem;
   padding-bottom: 0.4rem;
   border-bottom: 3px solid var(--red);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Roboto Slab", Georgia, serif;
   color: var(--green-dark);
   font-size: 1.4rem;
 }
