@@ -2,8 +2,8 @@
    William Michel Borja Ornelas */
 
 :root {
-  --navy: #16324f;
-  --navy-dark: #0d2136;
+  --primary: #16324f;
+  --primary-dark: #0d2136;
   --accent: #d97742;
   --page: #f8f6f3;
   --ink: #2b2b2b;
@@ -27,7 +27,7 @@ body {
 
 header {
   position: relative;
-  background-color: var(--navy);
+  background-color: var(--primary);
   padding: 1.25rem 1rem 1rem;
   text-align: center;
 }
@@ -48,7 +48,7 @@ header {
   top: 1.1rem;
   right: 1rem;
   border: 0;
-  background-color: var(--navy);
+  background-color: var(--primary);
   color: #ffffff;
   font-size: 1.8rem;
   line-height: 1;
@@ -85,7 +85,7 @@ nav ul {
 nav a {
   display: block;
   padding: 0.85rem 1.4rem;
-  border-bottom: 4px solid var(--navy);
+  border-bottom: 4px solid var(--primary);
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
@@ -93,7 +93,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  background-color: var(--navy-dark);
+  background-color: var(--primary-dark);
   border-bottom-color: var(--accent);
 }
 
@@ -110,7 +110,7 @@ h1 {
   font-family: "Roboto Slab", Georgia, serif;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--primary);
   text-align: center;
 }
 
@@ -144,7 +144,7 @@ figure img {
 /* ---------- footer ---------- */
 
 footer {
-  background-color: var(--navy);
+  background-color: var(--primary);
   color: #ffffff;
   padding: 1.5rem 1rem;
   text-align: center;
@@ -165,7 +165,7 @@ figure h2 {
   margin: 0 0 0.5rem;
   font-family: "Roboto Slab", Georgia, serif;
   font-size: 1.3rem;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 figure p {
@@ -176,12 +176,12 @@ figure p {
 
 figure .label {
   font-weight: 600;
-  color: var(--navy);
+  color: var(--primary);
 }
 
 #filter-status {
   margin: -0.5rem 0 1.5rem;
   text-align: center;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--primary);
 }
