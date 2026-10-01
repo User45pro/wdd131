@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filtered Temple Album - WDD 131 - William Michel Borja Ornelas</title>
+  <meta name="description"
+    content="WDD 131 W04 temple album that builds each temple card with JavaScript and filters them by age and size.">
+  <meta name="author" content="William Michel Borja Ornelas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <span id="album-title">Temple Album</span>
+    <button id="menu-button" type="button" aria-label="Open the navigation menu" aria-expanded="false"></button>
+    <nav id="site-nav">
+      <ul>
+        <li><a href="#" data-filter="home" class="active" aria-current="page">Home</a></li>
+        <li><a href="#" data-filter="old">Old</a></li>
+        <li><a href="#" data-filter="new">New</a></li>
+        <li><a href="#" data-filter="large">Large</a></li>
+        <li><a href="#" data-filter="small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples Around the World</h1>
+    <p id="filter-status" role="status"></p>
+    <div class="album" id="temple-cards"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> William Michel Borja Ornelas, Michoacan, Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+
+</html>
