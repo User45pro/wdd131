@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>References | Clear Voice English</title>
+  <meta name="description"
+    content="Sources used to build the Clear Voice English site: the two Google Fonts, the documentation I followed for lazy loading and localStorage, and where the images come from.">
+  <meta name="author" content="William Michel Borja Ornelas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Clear Voice English logo" width="44" height="44">
+        <span>Clear Voice English</span>
+      </a>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open the menu" aria-expanded="false"
+        aria-controls="siteNav">&#9776;</button>
+    </div>
+    <nav class="site-nav" id="siteNav" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="free-class.html">Free Class</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>References</h1>
+
+    <section class="card">
+      <h2>Images</h2>
+      <p>
+        The logo, the video call drawing on the home page and the three level badges are my own SVG files, drawn for
+        this site. The portrait is my own photograph.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Fonts</h2>
+      <ul>
+        <li>
+          Open Sans, by Steve Matteson, from
+          <a href="https://fonts.google.com/specimen/Open+Sans">Google Fonts</a>.
+        </li>
+        <li>
+          Roboto Slab, by Christian Robertson, from
+          <a href="https://fonts.google.com/specimen/Roboto+Slab">Google Fonts</a>.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Documentation I used</h2>
+      <ul>
+        <li>
+          MDN Web Docs,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading">Lazy loading</a>, for
+          the loading attribute on the images below the fold.
+        </li>
+        <li>
+          MDN Web Docs,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Window.localStorage</a>, for
+          keeping the level and the filter between visits.
+        </li>
+        <li>
+          MDN Web Docs,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams">URLSearchParams</a>, for reading
+          the form answers on the confirmation page.
+        </li>
+        <li>
+          BYU-Idaho,
+          <a href="https://byui-cse.github.io/wdd131-ww-course/">WDD 131 course materials</a>, for the form standards
+          and the responsive layout practice.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Text</h2>
+      <p>
+        All the text on this site is mine. The courses, the days and the times are the classes I really teach.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Clear Voice English, online English classes from Michoacan, Mexico</p>
+    <p>&copy; <span id="currentyear"></span> William Michel Borja Ornelas</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clear Voice English | Online English Classes for Adults in Mexico</title>
+  <meta name="description"
+    content="Online English classes for adults in Mexico who understand English but freeze when they have to speak. See how a class works, pick your level and ask for a free first class.">
+  <meta name="author" content="William Michel Borja Ornelas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <script src="scripts/course-data.js" defer></script>
+  <script src="scripts/site.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Clear Voice English logo" width="44" height="44">
+        <span>Clear Voice English</span>
+      </a>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open the menu" aria-expanded="false"
+        aria-controls="siteNav">&#9776;</button>
+    </div>
+    <nav class="site-nav" id="siteNav" aria-label="Main menu">
+      <ul>
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="free-class.html">Free Class</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <img src="images/hero-online-class.svg"
+        alt="Two people in a video call" width="480" height="350">
+      <div>
+        <h1>English classes where you do the talking</h1>
+        <p class="lead">
+          Online classes for adults in Mexico who understand almost everything and still go quiet when it is their turn
+          to talk.
+        </p>
+        <a class="button" href="free-class.html">Ask for your free first class</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>How a class works</h2>
+      <ol class="steps">
+        <li>
+          <h3>You talk first</h3>
+          <p>
+            We start with a question about your week. You speak for a few minutes and I listen without
+            stopping you.
+          </p>
+        </li>
+        <li>
+          <h3>I write the mistakes down</h3>
+          <p>
+            Every sentence that came out wrong goes on my list, with the way a native speaker would say it. We go back
+            over the list together.
+          </p>
+        </li>
+        <li>
+          <h3>You get a summary</h3>
+          <p>
+            The same night you receive one page: the topic for next time, your mistakes, and the words you were missing.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Pick your level</h2>
+      <p>Choose the sentence that sounds like you. The site keeps your choice for your next visit.</p>
+      <div class="picker-buttons">
+        <button class="level-button" type="button" data-level="beginner" aria-pressed="false">
+          I am starting again
+        </button>
+        <button class="level-button" type="button" data-level="intermediate" aria-pressed="false">
+          I understand more than I say
+        </button>
+        <button class="level-button" type="button" data-level="advanced" aria-pressed="false">
+          I speak, but I want to sound natural
+        </button>
+      </div>
+      <p class="picker-result" id="levelAdvice" aria-live="polite"></p>
+    </section>
+
+    <section class="card teacher">
+      <h2>Your teacher</h2>
+      <img src="images/william-borja.jpg" alt="Portrait of William Michel Borja Ornelas" width="360" height="360"
+        loading="lazy">
+      <div>
+        <p>
+          I am William, I live in Michoacan and I teach English online every day, most of it one to one. I also work as
+          a student mentor, so I spend my week listening to adults who are afraid of saying the wrong thing.
+        </p>
+        <p>
+          If you can say it in Spanish, you should be able to say it in English. So we start from what
+          you already live and we build the English around it.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>What people ask me</h2>
+      <dl class="questions">
+        <dt>I studied English at school and I forgot it. Can I still start?</dt>
+        <dd>
+          Yes, and it is the most common case. Most of it is still there, you just have not used it in years. The beginner classes bring it
+          back in order.
+        </dd>
+        <dt>What if I get stuck and I cannot say something?</dt>
+        <dd>
+          You say it in Spanish and we build the English sentence together. That is where most of the class comes
+          from.
+        </dd>
+        <dt>How long is a class and how often?</dt>
+        <dd>
+          Between forty five and sixty minutes, twice a week for most courses. The full days and times are on the
+          <a href="courses.html">Courses page</a>.
+        </dd>
+        <dt>Can I try before I decide?</dt>
+        <dd>
+          That is what the first class is for. It is free, it is a real class, and at the end you know which course
+          fits you.
+        </dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Clear Voice English, online English classes from Michoacan, Mexico</p>
+    <p>&copy; <span id="currentyear"></span> William Michel Borja Ornelas</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+</body>
+
+</html>

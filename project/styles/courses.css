@@ -1,0 +1,151 @@
+/* WDD 131 - W06 Project: courses page
+   William Michel Borja Ornelas */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.filter-button {
+  background-color: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: 6px;
+  padding: 0.6rem 1.1rem;
+  color: var(--navy);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #eef2f6;
+}
+
+.filter-button.chosen {
+  background-color: var(--navy);
+  border-color: var(--accent);
+  color: var(--white);
+}
+
+.result-count {
+  font-weight: 600;
+}
+
+/* ---------- course cards ---------- */
+
+.course-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 4px #16324f14;
+}
+
+.course img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 0.75rem;
+}
+
+.course h3 {
+  font-size: 1.2rem;
+}
+
+.level-tag {
+  align-self: flex-start;
+  margin-bottom: 0.75rem;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.1rem 0.8rem;
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.course-facts {
+  margin: 0 0 0.9rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.75rem;
+  font-size: 0.98rem;
+}
+
+.course-facts dt {
+  float: left;
+  clear: left;
+  width: 6.5rem;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.course-facts dd {
+  margin: 0 0 0.3rem 6.5rem;
+}
+
+.topics {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+/* ---------- weekly schedule ---------- */
+
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+
+.schedule caption {
+  margin-bottom: 0.6rem;
+  color: var(--navy);
+  font-weight: 600;
+  text-align: left;
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+}
+
+.schedule thead th {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.schedule tbody th {
+  background-color: #eef2f6;
+  color: var(--navy);
+}
+
+/* ---------- tablet and desktop ---------- */
+
+@media (min-width: 40rem) {
+  .course-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 60rem) {
+  .course-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

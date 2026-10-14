@@ -1,0 +1,27 @@
+/* WDD 131 - W06 Project: confirmation page
+   William Michel Borja Ornelas */
+
+.summary {
+  margin: 0 0 1.25rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.9rem;
+}
+
+.summary dt {
+  float: left;
+  clear: left;
+  width: 9rem;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.summary dd {
+  margin: 0 0 0.4rem 9rem;
+}
+
+.count-note {
+  border-left: 5px solid var(--accent);
+  background-color: #fdf3ec;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.25rem;
+}

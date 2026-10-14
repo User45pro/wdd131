@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request Received | Clear Voice English</title>
+  <meta name="description"
+    content="Confirmation page for Clear Voice English. It shows the class, the days and the start date you asked for in your free first class request.">
+  <meta name="author" content="William Michel Borja Ornelas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/confirmation.css">
+  <script src="scripts/course-data.js" defer></script>
+  <script src="scripts/site.js" defer></script>
+  <script src="scripts/confirmation.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Clear Voice English logo" width="44" height="44">
+        <span>Clear Voice English</span>
+      </a>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open the menu" aria-expanded="false"
+        aria-controls="siteNav">&#9776;</button>
+    </div>
+    <nav class="site-nav" id="siteNav" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a class="current" href="free-class.html">Free Class</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Your request is on my list</h1>
+
+    <section class="card">
+      <h2>This is what you asked for</h2>
+      <p id="greeting"></p>
+      <dl class="summary" id="summary"></dl>
+      <p class="count-note" id="countNote"></p>
+      <p>
+        I answer from my own email, so look for a message from me today. If you left your WhatsApp number, I write
+        there as well.
+      </p>
+      <p><a class="button" href="courses.html">Look at the classes again</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Clear Voice English, online English classes from Michoacan, Mexico</p>
+    <p>&copy; <span id="currentyear"></span> William Michel Borja Ornelas</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+</body>
+
+</html>

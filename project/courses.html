@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses | Clear Voice English</title>
+  <meta name="description"
+    content="The six English courses I teach online, from starting again to pronunciation, with the level, the days, the time and the length of every class.">
+  <meta name="author" content="William Michel Borja Ornelas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/courses.css">
+  <script src="scripts/course-data.js" defer></script>
+  <script src="scripts/site.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Clear Voice English logo" width="44" height="44">
+        <span>Clear Voice English</span>
+      </a>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open the menu" aria-expanded="false"
+        aria-controls="siteNav">&#9776;</button>
+    </div>
+    <nav class="site-nav" id="siteNav" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="courses.html">Courses</a></li>
+        <li><a href="free-class.html">Free Class</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Courses</h1>
+    <p class="lead">
+      I teach six courses at three levels. All of them are live, and the group classes never go past four students
+      so everybody gets to talk.
+    </p>
+
+    <section class="card">
+      <h2>Filter by level</h2>
+      <div class="filter-bar">
+        <button class="filter-button" type="button" data-level="all" aria-pressed="false">All classes</button>
+        <button class="filter-button" type="button" data-level="beginner" aria-pressed="false">Beginner</button>
+        <button class="filter-button" type="button" data-level="intermediate"
+          aria-pressed="false">Intermediate</button>
+        <button class="filter-button" type="button" data-level="advanced" aria-pressed="false">Advanced</button>
+      </div>
+      <p class="result-count" id="resultCount" aria-live="polite"></p>
+    </section>
+
+    <section>
+      <h2>The classes</h2>
+      <ul class="course-list" id="courseList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Weekly schedule</h2>
+      <p>All times are Mexico City time. If none of them works for you, tell me and we look for another hour.</p>
+      <table class="schedule">
+        <caption>Days and times for the six courses</caption>
+        <thead>
+          <tr>
+            <th scope="col">Days</th>
+            <th scope="col">Class</th>
+            <th scope="col">Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday and Wednesday</th>
+            <td>Starting From Zero</td>
+            <td>7:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Monday and Wednesday</th>
+            <td>Everyday Conversation</td>
+            <td>8:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Tuesday and Thursday</th>
+            <td>Talking About Your Day</td>
+            <td>6:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Tuesday and Thursday</th>
+            <td>English For Work</td>
+            <td>7:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Friday</th>
+            <td>Pronunciation Clinic</td>
+            <td>7:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Saturday</th>
+            <td>Job Interview Practice</td>
+            <td>10:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Not sure which one is yours?</h2>
+      <p>
+        Take the free first class. It is a real class, we talk for an hour, and at the end I tell you which course
+        fits and why.
+      </p>
+      <p><a class="button" href="free-class.html">Ask for your free first class</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Clear Voice English, online English classes from Michoacan, Mexico</p>
+    <p>&copy; <span id="currentyear"></span> William Michel Borja Ornelas</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+</body>
+
+</html>
